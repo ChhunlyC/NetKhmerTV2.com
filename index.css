@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    height: 200vh;
+    background-color: rgb(25, 19, 19);
+
+}
+.main .menu-left{
+    background-color: rgb(66, 61, 61);
+    width: 100%;
+    height: 15vh;
+}
+.main .menu-left img{
+    width: 100px;
+    height: 100px;
+    margin-left: 80px;
+    float: left;
+    margin-top: 15px;
+}
+.main .menu-right{
+    width: 400px;
+    height: 100px;
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'EB Garamond', serif;
+    color: #ffffffcc;
+}
+.main .menu-right .icon{
+    
+    height: 25px;
+    text-align: center;
+    margin-top: 37px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+}
+.main .menu-right .active, .icon:hover{
+    border-bottom: 3px solid black;
+    transition: 0.1s;
+    transform: translateY(-1px)
+}
+
+/* Responsive menu bar */
+
+/*X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap*/
+
+
+@media (max-width: 575.99px) { 
+    .main .menu-right .icon{
+        display: none;
+    }  
+}
+/*Small (SM) devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+    .main .menu-right .icon{
+        width: 30px;
+        font-size: 10px;
+    }  
+}
+
+/*Medium (MD) devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .main .menu-right .icon{
+        width: 35px;
+        font-size: 15px;
+    }  
+}
+
+/*Large (LG) devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .main .menu-right .icon{
+        width: 60px;
+        font-size: 20px;
+    }   
+}
+.box_control{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.box_control .box{
+    width: 20%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.863);
+    border-radius: 4px;
+}
+.box_control .box:hover{
+    box-shadow: rgba(0, 0, 0, 0.813) 0px 30px 90px;
+}
+.box_control .box .img img{
+    clear: both;
+    width: 100%;
+    height: 250px;
+    border-radius: 4px;
+}
+.box_control .box .img p{
+    margin-top: 7px;
+    text-align: center;
+    color: white;
+}
+
+#txtSearch{
+    margin-top: 10px;
+    border-radius: 4px 4px 4px 4px;
+    border: 2px solid goldenrod;
+    display: none;
+}

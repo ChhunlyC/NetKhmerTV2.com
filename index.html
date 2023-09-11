@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The cofe</title>
+    <link rel="stylesheet" href="./page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link class="dem" rel="shortcut icon" href="/The Cofe/img/logo/icons8-kawaii-coffee-100.png" type="image/x-icon" >
+</head>
+<body>
+    <div class="main">
+        <div class="menu-left">
+            <div class="logo">
+                <img  src="/The Cofe/img/logo/icons8-kawaii-coffee-100.png" alt="">
+            </div>
+            <div class="menu-right">
+                <div class="icon active" id="1">Home</div>
+                <div class="icon" id="2">Login</div>
+                <div class="icon" id="3">Search
+                    <input id="txtSearch" type="text" style="width: 220px; height: 25px;">
+                </div>
+                <div class="icon" id="4">About</div>
+                <div class="icon" id="5">Exit</div>
+            </div>
+        </div>
+        <div class="box_control">
+            <div class="box">
+                <div class="img">
+                    <img id="black_adam" src="/The Cofe/img/20221128-161240-black-adam-heroes.jpg" alt="">
+                    <p>Movie Title</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="/The Cofe/img/download.jpeg" alt="">
+                    <p>Movie Title</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="/The Cofe/img/20221128-161240-black-adam-heroes.jpg" alt="">
+                    <p>Movie Title</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="/The Cofe/img/20221128-161240-black-adam-heroes.jpg" alt="">
+                    <p>Movie Title</p>
+                </div>
+            </div>
+        </div>
+        <div class="box_control">
+            <div class="box">
+                <div class="img">
+                    <img src="/The Cofe/img/20221128-161240-black-adam-heroes.jpg" alt="">
+                    <p>Movie Title</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="/The Cofe/img/20221128-161240-black-adam-heroes.jpg" alt="">
+                    <p>Movie Title</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="/The Cofe/img/20221128-161240-black-adam-heroes.jpg" alt="">
+                    <p>Movie Title</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="/The Cofe/img/20221128-161240-black-adam-heroes.jpg" alt="">
+                    <p>Movie Title</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="/Jquery"></script>
+<script>
+    $(".icon").on('click', function(){
+        $(".icon").removeClass(".icon active")
+        $(this).addClass(".icon active"); 
+    });
+    $("#2").on('click', function(){
+        window.open("/The Cofe/img/main/test.html","_self")
+    });
+    $("#black_adam").on('click', function(){
+        window.open("https://khfullhd.net/archives/66218","_self")
+    });
+
+    $("#3").on('click',function(){
+        $("#txtSearch").css('display', 'block');
+        })
+</script>
+<script>
+    txtSearch=document.addEventListener("keyup",function(){
+        var tmplist = item.filter((el)=>
+        el.name.toLowerCase().includes(txtSearch.value.toLowerCase())
+        )
+        getItems(tmplist)
+    })
+</script>

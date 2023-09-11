@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./test.css">
+    <link rel="stylesheet" href="./test.js">
+</head>
+<body>
+    <div class="control">
+        <div class="main">
+            <div class="menu-left">
+                <div class="logo">
+                    <img  src="/The Cofe/img/logo/icons8-kawaii-coffee-100.png" alt="">
+                </div>
+                <div class="menu-right">
+                    <div class="icon" id="1">Home</div>
+                    <div class="icon active" id="2">Login</div>
+                    <div class="icon" id="3">Search</div>
+                    <div class="icon" id="4">About</div>
+                    <div class="icon" id="5">Exit</div>
+                </div>
+            </div>
+        <div class="form">
+            <h1>F<label class="label">O</label class="label">R<label>M</label class="label">_L<label class="label">O</label>G<label class="label">I</label>N</h1>
+            <br>
+            <label class="user">UserName</label>
+            <br>
+            <input type="text" id="username">
+            <br>
+            <br>
+            <label class="pass">Password</label>
+            <br>
+            <input id="password" type="password">
+            <button type="button" class="button">Submit</button>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="/Jquery"></script>
+
+<script>
+    $(document).ready(function(){
+        $(".button").click(function(){
+            $(document).ready(function() {
+        var password = $("#password").val();
+        var Username = $("#username").val();
+            if (password === "1111" && Username ==="chhunly") {
+            window.open("https://www.youtube.com/","_self")
+    } else {
+            alert("Pleace change password");
+    }
+  });
+        })
+    })
+    $("#1").on('click', function(){
+        window.open("/The Cofe/img/main/page.html","_self")
+    });
+</script>
+
+
